@@ -47,6 +47,7 @@ Ejemplo mínimo para realizar pruebas en `DocumentIntelligence.Api/appsettings.j
     "ApiKey": "<your-key>"
   }
 }
+```
 
 ---
 
