@@ -25,6 +25,7 @@ El desarrollo sigue principios de **Clean Code** y está organizado bajo un enfo
 - Extracción de campos estructurados: **importe, fecha, proveedor, items, impuestos**, etc.  
 - Arquitectura modular, diseñada para **extenderse con nuevos módulos** (facturas, contratos, identificaciones).  
 - Integración con servicios de **Azure**: OpenAI y Cognitive Services.  
+- Autenticación mediante **JWT** para asegurar los endpoints y controlar el acceso a los servicios.
 
 ---
 
