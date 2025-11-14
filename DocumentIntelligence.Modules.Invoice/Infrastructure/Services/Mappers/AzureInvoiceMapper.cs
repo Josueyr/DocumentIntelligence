@@ -11,14 +11,14 @@ namespace DocumentIntelligence.Modules.Invoice.Infrastructure.Services.Mappers
 {
     // Mapper para convertir la respuesta del servicio de Azure Document Intelligence
     // a nuestro modelo interno `InvoiceResult`.
-    // Comentarios muy humanos: toma los campos que la IA detecta en la factura
+    // Toma los campos que la IA detecta en la factura
     // y los normaliza para que el resto de la app pueda manejarlos fácilmente.
     public static class AzureInvoiceMapper
     {
         private const float MIN_CONFIDENCE = 0.85f;
 
         // Convierte la lista de documentos analizados en una lista de resultados de factura.
-        // Nota: simplemente itera los documentos y llama a la función que crea cada resultado.
+        // Simplemente itera los documentos y llama a la función que crea cada resultado.
         public static OperationResult<List<InvoiceResult>> MapFrom(IReadOnlyList<AnalyzedDocument> documents)
         {
             List<InvoiceResult> listInvoiceResult = new();
@@ -88,9 +88,8 @@ namespace DocumentIntelligence.Modules.Invoice.Infrastructure.Services.Mappers
         }
 
         // Extrae los detalles de impuestos cuando Azure devuelve una lista/objeto.
-        // Comentario humano: algunos documentos ofrecen un listado (array) con objetos
-        // por cada tipo de impuesto; esta función intenta formatearlos en una cadena
-        // legible con descripción y cantidades.
+        // Algunos documentos ofrecen un listado (array) con objetos por cada tipo de impuesto;
+        // esta función intenta formatearlos en una cadena legible con descripción y cantidades.
         private static string GetTaxDetailsFromKey(AnalyzedDocument doc, string key)
         {
             if (doc == null) return string.Empty;
@@ -150,7 +149,7 @@ namespace DocumentIntelligence.Modules.Invoice.Infrastructure.Services.Mappers
                 return stringBuilder.ToString().Trim();
             }
 
-            // If not a list, try normal extraction
+            // Si no es una lista, llevamos a cabo la extracción normal
             if (documentField.Confidence.HasValue && documentField.Confidence.Value >= MIN_CONFIDENCE)
             {
                 return ExtractValueByType(documentField);
@@ -197,8 +196,8 @@ namespace DocumentIntelligence.Modules.Invoice.Infrastructure.Services.Mappers
         }
 
         // Extrae la representación más amigable posible para un campo de dirección.
-        // Comentario humano: la IA puede devolver dirección como objeto o como texto,
-        // se intenta preferir el texto ya formateado si existe.
+        // La IA puede devolver dirección como objeto o como texto; se intenta preferir
+        // el texto ya formateado si existe.
         private static string GetAddress(DocumentField doc)
         {
             if (doc?.ValueAddress == null) return doc?.Content ?? string.Empty;

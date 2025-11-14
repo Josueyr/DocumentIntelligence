@@ -11,7 +11,7 @@ namespace DocumentIntelligence.Modules.Invoice.Infrastructure.Services
 {
     // Servicio que sabe comunicarse con Azure Document Intelligence
     // para analizar una factura y devolver nuestro modelo interno.
-    // Comentario humano: encapsula toda la lógica necesaria para llamar
+    // Encapsula toda la lógica necesaria para llamar
     // al servicio de Azure y transformar la respuesta en algo usable.
     public class AzureInvoiceAnalyzer : IInvoiceAnalyzer
     {
