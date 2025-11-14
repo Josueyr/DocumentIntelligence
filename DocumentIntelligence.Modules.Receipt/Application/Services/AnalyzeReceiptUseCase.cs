@@ -1,4 +1,5 @@
-﻿using DocumentIntelligence.Modules.Receipt.Application.Interfaces;
+﻿using DocumentIntelligence.Common.Models;
+using DocumentIntelligence.Modules.Receipt.Application.Interfaces;
 using DocumentIntelligence.Modules.Receipt.Domain.Interfaces;
 using DocumentIntelligence.Modules.Receipt.Domain.Models;
 using System.IO;

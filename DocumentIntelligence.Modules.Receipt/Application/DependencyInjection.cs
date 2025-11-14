@@ -2,11 +2,14 @@
 using DocumentIntelligence.Modules.Receipt.Application.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-public static class ApplicationDependencyInjection
+namespace DocumentIntelligence.Modules.Receipt.Application
 {
-    public static IServiceCollection AddApplication(this IServiceCollection services)
+    public static class ApplicationDependencyInjection
     {
-        services.AddScoped<IAnalyzeReceiptUseCase, AnalyzeReceiptUseCase>();
-        return services;
+        public static IServiceCollection AddReceiptApplication(this IServiceCollection services)
+        {
+            services.AddScoped<IAnalyzeReceiptUseCase, AnalyzeReceiptUseCase>();
+            return services;
+        }
     }
 }

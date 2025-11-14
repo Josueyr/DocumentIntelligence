@@ -14,11 +14,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DocumentIntelligence.Modules.Receipt\DocumentIntelligence.Modules.Receipt.csproj" />
+    <ProjectReference Include="..\DocumentIntelligence.Modules.Invoice\DocumentIntelligence.Modules.Invoice.csproj" />
   </ItemGroup>
 
-  <!-- Copy the generated XML documentation from the Receipt module into the API output directory -->
+  <!-- Copy the generated XML documentation from the Receipt and Invoice modules into the API output directory -->
   <ItemGroup>
     <None Include="..\DocumentIntelligence.Modules.Receipt\bin\$(Configuration)\$(TargetFramework)\DocumentIntelligence.Modules.Receipt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\DocumentIntelligence.Modules.Invoice\bin\$(Configuration)\$(TargetFramework)\DocumentIntelligence.Modules.Invoice.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

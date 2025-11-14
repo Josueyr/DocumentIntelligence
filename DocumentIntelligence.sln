@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentIntelligence.Module
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentIntelligence.Api", "DocumentIntelligence.Api\DocumentIntelligence.Api.csproj", "{AB994C92-676E-7B9D-981A-6CF115FB50FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentIntelligence.Modules.Invoice", "DocumentIntelligence.Modules.Invoice\DocumentIntelligence.Modules.Invoice.csproj", "{98CDDC14-A331-4591-8696-88A3179D2B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentIntelligence.Common", "DocumentIntelligence.Common\DocumentIntelligence.Common.csproj", "{6915C0C2-6985-4F43-99D8-25E7A0CF93F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{AB994C92-676E-7B9D-981A-6CF115FB50FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB994C92-676E-7B9D-981A-6CF115FB50FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB994C92-676E-7B9D-981A-6CF115FB50FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CDDC14-A331-4591-8696-88A3179D2B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CDDC14-A331-4591-8696-88A3179D2B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CDDC14-A331-4591-8696-88A3179D2B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CDDC14-A331-4591-8696-88A3179D2B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6915C0C2-6985-4F43-99D8-25E7A0CF93F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6915C0C2-6985-4F43-99D8-25E7A0CF93F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6915C0C2-6985-4F43-99D8-25E7A0CF93F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6915C0C2-6985-4F43-99D8-25E7A0CF93F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

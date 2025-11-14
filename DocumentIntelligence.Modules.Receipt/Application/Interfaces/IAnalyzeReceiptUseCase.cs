@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using DocumentIntelligence.Modules.Receipt.Domain.Models;
+using DocumentIntelligence.Common.Models;
 
 namespace DocumentIntelligence.Modules.Receipt.Application.Interfaces
 {

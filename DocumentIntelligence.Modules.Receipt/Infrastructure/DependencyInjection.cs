@@ -2,11 +2,14 @@
 using DocumentIntelligence.Modules.Receipt.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-public static class InfrastructureDependencyInjection
+namespace DocumentIntelligence.Modules.Receipt.Infrastructure
 {
-    public static IServiceCollection AddInfrastructure(this IServiceCollection services)
+    public static class InfrastructureDependencyInjection
     {
-        services.AddScoped<IReceiptAnalyzer, AzureReceiptAnalyzer>();
-        return services;
+        public static IServiceCollection AddReceiptInfrastructure(this IServiceCollection services)
+        {
+            services.AddScoped<IReceiptAnalyzer, AzureReceiptAnalyzer>();
+            return services;
+        }
     }
 }

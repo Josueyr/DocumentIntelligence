@@ -1,5 +1,6 @@
 ﻿// Infrastructure/Mappers/AzureReceiptMapper.cs
 using Azure.AI.DocumentIntelligence;
+using DocumentIntelligence.Common.Models;
 using DocumentIntelligence.Modules.Receipt.Domain.Models;
 
 namespace DocumentIntelligence.Modules.Receipt.Infrastructure.Services.Mappers

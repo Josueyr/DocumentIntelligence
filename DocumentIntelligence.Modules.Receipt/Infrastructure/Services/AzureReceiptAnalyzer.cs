@@ -1,11 +1,13 @@
 ﻿using Azure;
 using Azure.AI.DocumentIntelligence;
+using DocumentIntelligence.Common.Models;
+using DocumentIntelligence.Common.Models.AzureSettings;
 using DocumentIntelligence.Modules.Receipt.Domain.Interfaces;
 using DocumentIntelligence.Modules.Receipt.Domain.Models;
-using DocumentIntelligence.Modules.Receipt.Infrastructure.Config;
 using DocumentIntelligence.Modules.Receipt.Infrastructure.Services.Mappers;
 using Microsoft.Extensions.Options;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;

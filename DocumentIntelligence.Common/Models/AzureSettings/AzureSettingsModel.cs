@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DocumentIntelligence.Modules.Receipt.Infrastructure.Config
+namespace DocumentIntelligence.Common.Models.AzureSettings
 {
     public class AzureSettingsModel
     {
